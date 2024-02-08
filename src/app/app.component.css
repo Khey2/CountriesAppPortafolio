@@ -1,0 +1,19 @@
+.sidenav{
+    background-color: #29292b;
+    
+
+}
+
+
+
+@media screen and (max-width: 576px) {
+    .sidenav{
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and ( min-width: 992px){
+    .sidenav{
+        height: 100vh;
+    }
+}

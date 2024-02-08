@@ -1,0 +1,26 @@
+<div class="p-4">
+    <!-- <shared-search-box
+    title="Lenguaje"
+    (inputValue)="searchLenguages( $event )"></shared-search-box> -->
+
+    <div class="text-center">
+        <button *ngFor="let lenguaje of lenguajes"
+         class="btn btn-outline-primary mx-2 mb-3"
+         (click)="searchLenguages( lenguaje )"
+         >
+            {{lenguaje}}
+        </button>
+    </div>
+
+    <div class="alert alert-primary text-center"
+    *ngIf="loading">
+        <p>Espere porfavor</p>
+        <img src="assets/circle/circle.svg" alt="">
+    </div>
+
+    <div  *ngIf="dataResponse.length > 0; ">
+        <app-country-table [countries]="dataResponse"></app-country-table>
+       
+    </div>
+    
+</div>

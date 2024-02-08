@@ -1,0 +1,12 @@
+<div id="searchbox" class="form-group">
+    <h3 class="mb-4">Buscar por: {{title}} </h3>
+    <input type="text" id="input" class="form-control"
+    placeholder="Introduce el termino..."
+    #input
+    (keyup.enter)="emitirValor()"
+
+    >
+    <button class="btn btn-outline-success mt-4 mb-4"
+    (click)="emitirValor()"
+    > Buscar</button>
+</div>

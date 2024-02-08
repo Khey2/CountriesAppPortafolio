@@ -1,0 +1,11 @@
+#table{
+    height: 600px;
+    overflow: auto;
+    width: 85%;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+#imgSvg{
+    width: 50px;
+}

@@ -1,0 +1,24 @@
+<div class="p-4">
+    <h2>Paises Independientes</h2>
+
+
+
+        <div >
+            <div class="container">
+               <div class="alert alert-primary" *ngIf="loaded == false">
+                    <p class="text-cener">Buscando paises independientes</p>
+                    <img src="../../../../assets/circle/circle.svg" alt=""
+                    (load)="loading()"
+                    
+                    id="circle"
+                    >
+               </div>
+           </div>
+            <app-country-table
+            
+            *ngIf="loaded == true"
+            [countries]="dataResponse">
+            </app-country-table>
+        </div> 
+
+</div>

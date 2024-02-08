@@ -1,0 +1,37 @@
+
+
+
+    <div class="p-4">
+        <shared-search-box
+         (inputValue)="searchTerm( $event )"
+         title="Pais"
+         ></shared-search-box>
+    
+         <div *ngIf="dataResponse.length == 0 && loaded == true; else table"
+         class="alert alert-warning" role="alert">
+            Haz una nueva busqueda...
+          </div>
+        
+          <div *ngIf="loaded == false" class="container alert alert-primary">
+
+            <p  class="text-center"> Espera porfavor...</p>
+                <img src="../../../../assets/circle/circle.svg" alt=""
+                >
+           </div>
+
+         <ng-template #table>
+        <div  *ngIf="dataResponse.length > 0">
+
+           
+
+            <app-country-table 
+                *ngIf="loaded == true"
+                [countries]="dataResponse"></app-country-table>
+           
+        </div>
+        </ng-template> 
+</div>
+
+
+
+

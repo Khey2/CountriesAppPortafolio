@@ -1,4 +1,8 @@
 import { Component } from '@angular/core';
+import { CountriesService } from './country/services/countries.service';
+import { ToastrService } from 'ngx-toastr';
+import { Country } from './country/interfaces/country.interface';
+
 
 @Component({
   selector: 'app-root',
@@ -6,5 +10,7 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'countriesApp';
+
+
+  
 }

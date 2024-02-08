@@ -1,0 +1,26 @@
+#sidenav{
+    background-color: #383838;
+
+}
+#menuOptions{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+@media screen and ( max-width: 573px){
+    #menuOptions{
+        /* align-items: flex-start; */
+    }
+    
+}
+
+
+#li{
+    width: 150px;
+    display: ;
+}
+#btn{
+    width: 90%;
+}
